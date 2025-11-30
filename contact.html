@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us - EveryPeso</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        background: #f5f7fa;
+        min-height: 100vh;
+        padding: 0;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f5f7fa;
+        min-height: 100vh;
+        position: relative;
+        padding: 0 40px;
+      }
+
+      .header {
+        background: white;
+        border-bottom: 1px solid #e5e5ea;
+        padding: 32px 0;
+        margin-bottom: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .page-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: -1px;
+        line-height: 1.2;
+      }
+
+      .content {
+        padding: 0 0 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .contact-section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .section-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: -0.5px;
+        margin-bottom: 24px;
+        line-height: 1.3;
+      }
+
+      .section-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        letter-spacing: -0.1px;
+        margin-bottom: 20px;
+      }
+
+      .section-text:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-info {
+        margin-top: 32px;
+      }
+
+      .contact-item {
+        font-size: 18px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        margin-bottom: 24px;
+      }
+
+      .contact-item strong {
+        font-weight: 600;
+        color: #1f2937;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .email-link {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2563eb;
+        text-decoration: none;
+        padding: 16px 32px;
+        background: #eff6ff;
+        border-radius: 8px;
+        border: 2px solid #2563eb;
+        transition: all 0.2s ease;
+        margin-top: 8px;
+      }
+
+      .email-link:hover {
+        background: #2563eb;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+      }
+
+      .email-link:active {
+        transform: translateY(0);
+      }
+
+      .intro-section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .intro-text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #1f2937;
+        line-height: 1.7;
+        letter-spacing: -0.2px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 20px;
+        }
+
+        .header {
+          padding: 24px 0;
+          margin-bottom: 32px;
+        }
+
+        .header-content {
+          padding: 0 20px;
+        }
+
+        .page-title {
+          font-size: 32px;
+        }
+
+        .content {
+          gap: 20px;
+          padding-bottom: 40px;
+        }
+
+        .section,
+        .intro-section,
+        .contact-section {
+          padding: 28px;
+          border-radius: 10px;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+
+        .email-link {
+          font-size: 18px;
+          padding: 14px 28px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        .header-content {
+          padding: 0 16px;
+        }
+
+        .page-title {
+          font-size: 28px;
+        }
+
+        .section,
+        .intro-section,
+        .contact-section {
+          padding: 24px;
+        }
+
+        .email-link {
+          font-size: 16px;
+          padding: 12px 24px;
+          display: block;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <h1 class="page-title">Contact Us</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <!-- Introduction -->
+        <div class="intro-section">
+          <p class="intro-text">
+            We'd love to hear from you! If you have any questions, feedback, or
+            concerns about EveryPeso, please don't hesitate to reach out to us.
+          </p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-section">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-text">
+            Send us an email and we'll get back to you as soon as possible.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Email Address</strong>
+              <a href="mailto:cmsabelita@gmail.com" class="email-link">
+                cmsabelita@gmail.com
+              </a>
+            </div>
+            <div class="contact-item">
+              <strong>Owner</strong>
+              cmsabelita
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Privacy Policy - EveryPeso</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        background: #f5f7fa;
+        min-height: 100vh;
+        padding: 0;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #f5f7fa;
+        min-height: 100vh;
+        position: relative;
+        padding: 0 40px;
+      }
+
+      .header {
+        background: white;
+        border-bottom: 1px solid #e5e5ea;
+        padding: 32px 0;
+        margin-bottom: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .page-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: -1px;
+        line-height: 1.2;
+      }
+
+      .content {
+        padding: 0 0 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .intro-section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .intro-text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #1f2937;
+        line-height: 1.7;
+        letter-spacing: -0.2px;
+      }
+
+      .last-updated {
+        font-size: 14px;
+        font-weight: 500;
+        color: #6b7280;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #f3f4f6;
+      }
+
+      .section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .section-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: -0.5px;
+        margin-bottom: 24px;
+        line-height: 1.3;
+      }
+
+      .section-subtitle {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1f2937;
+        letter-spacing: -0.3px;
+        margin-top: 28px;
+        margin-bottom: 16px;
+        line-height: 1.4;
+      }
+
+      .section-subtitle:first-child {
+        margin-top: 0;
+      }
+
+      .section-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        letter-spacing: -0.1px;
+        margin-bottom: 20px;
+      }
+
+      .section-text:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-text strong {
+        font-weight: 600;
+        color: #1f2937;
+      }
+
+      .list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .list-item {
+        font-size: 16px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        letter-spacing: -0.1px;
+        padding-left: 28px;
+        position: relative;
+        margin-bottom: 16px;
+      }
+
+      .list-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .list-item::before {
+        content: "•";
+        position: absolute;
+        left: 12px;
+        color: #6b7280;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .numbered-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        counter-reset: item;
+      }
+
+      .numbered-item {
+        font-size: 16px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        letter-spacing: -0.1px;
+        padding-left: 36px;
+        position: relative;
+        margin-bottom: 16px;
+        counter-increment: item;
+      }
+
+      .numbered-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .numbered-item::before {
+        content: counter(item) ".";
+        position: absolute;
+        left: 0;
+        color: #6b7280;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .highlight-box {
+        background: #f9fafb;
+        border-left: 4px solid #2563eb;
+        border-radius: 8px;
+        padding: 24px;
+        margin: 24px 0;
+      }
+
+      .highlight-box .section-text {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: #374151;
+      }
+
+      .contact-section {
+        background: white;
+        border-radius: 12px;
+        padding: 40px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-item {
+        font-size: 16px;
+        font-weight: 400;
+        color: #374151;
+        line-height: 1.8;
+        margin-bottom: 12px;
+      }
+
+      .contact-item strong {
+        font-weight: 600;
+        color: #1f2937;
+      }
+
+      .footer-note {
+        background: white;
+        border-radius: 12px;
+        padding: 32px;
+        margin-bottom: 0;
+        border: 1px solid #e5e5ea;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      .footer-note-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #6b7280;
+        line-height: 1.7;
+        font-style: italic;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 20px;
+        }
+
+        .header {
+          padding: 24px 0;
+          margin-bottom: 32px;
+        }
+
+        .header-content {
+          padding: 0 20px;
+        }
+
+        .page-title {
+          font-size: 32px;
+        }
+
+        .content {
+          gap: 20px;
+          padding-bottom: 40px;
+        }
+
+        .section,
+        .intro-section,
+        .contact-section,
+        .footer-note {
+          padding: 28px;
+          border-radius: 10px;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+
+        .section-subtitle {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        .header-content {
+          padding: 0 16px;
+        }
+
+        .page-title {
+          font-size: 28px;
+        }
+
+        .section,
+        .intro-section,
+        .contact-section,
+        .footer-note {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <h1 class="page-title">Privacy Policy</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <!-- Introduction -->
+        <div class="intro-section">
+          <p class="intro-text">
+            EveryPeso ("we," "our," or "us") is committed to protecting your
+            privacy. This Privacy Policy explains how we collect, use, disclose,
+            and safeguard your information when you use our mobile application
+            EveryPeso (the "App").
+          </p>
+          <p class="intro-text" style="margin-top: 20px">
+            Please read this Privacy Policy carefully. By using the App, you
+            agree to the collection and use of information in accordance with
+            this policy.
+          </p>
+          <div class="last-updated">
+            <strong>Last Updated:</strong> November 30, 2025<br />
+            <strong>Effective Date:</strong> November 30, 2025
+          </div>
+        </div>
+
+        <!-- Information We Collect -->
+        <div class="section">
+          <h2 class="section-title">Information We Collect</h2>
+
+          <h3 class="section-subtitle">Personal Information</h3>
+          <div class="highlight-box">
+            <p class="section-text">
+              <strong
+                >We do not collect any personal identifying information such as
+                names, email addresses, phone numbers, or other personally
+                identifiable information.</strong
+              >
+            </p>
+          </div>
+
+          <h3 class="section-subtitle">Financial Data</h3>
+          <p class="section-text">
+            The App collects and stores the following financial information
+            locally on your device:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Account Information:</strong> Account names, types
+              (savings, investment, credit), and balances
+            </li>
+            <li class="list-item">
+              <strong>Transaction Data:</strong> Transaction names, amounts,
+              types (income, expense, transfer), dates, and associated
+              categories
+            </li>
+            <li class="list-item">
+              <strong>Categories:</strong> Custom transaction categories you
+              create
+            </li>
+            <li class="list-item">
+              <strong>Schedules:</strong> Recurring transaction schedules,
+              including frequency and notification dates
+            </li>
+            <li class="list-item">
+              <strong>Analytics Data:</strong> Net worth calculations, account
+              balances, and transaction summaries
+            </li>
+          </ul>
+
+          <h3 class="section-subtitle">Device Information</h3>
+          <p class="section-text">
+            The App may access the following device features:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Notifications:</strong> Push notification permissions for
+              scheduled transaction reminders
+            </li>
+            <li class="list-item">
+              <strong>Background Processing:</strong> Background fetch
+              capabilities for scheduled transactions
+            </li>
+            <li class="list-item">
+              <strong>File Access:</strong> Document picker access (if you
+              choose to import/export your financial data backup)
+            </li>
+            <li class="list-item">
+              <strong>Sharing:</strong> Device sharing capabilities (used only
+              when you export your data backup to save it to your device or
+              share it with other apps)
+            </li>
+          </ul>
+        </div>
+
+        <!-- How We Use Your Information -->
+        <div class="section">
+          <h2 class="section-title">How We Use Your Information</h2>
+          <p class="section-text">We use the information we collect to:</p>
+          <ol class="numbered-list">
+            <li class="numbered-item">
+              <strong>Provide Core Functionality:</strong> Enable you to track
+              your accounts, transactions, and financial activities
+            </li>
+            <li class="numbered-item">
+              <strong>Schedule Notifications:</strong> Send you reminders for
+              scheduled transactions
+            </li>
+            <li class="numbered-item">
+              <strong>Generate Analytics:</strong> Calculate and display your
+              net worth, account balances, and financial summaries
+            </li>
+          </ol>
+        </div>
+
+        <!-- Data Storage and Security -->
+        <div class="section">
+          <h2 class="section-title">Data Storage and Security</h2>
+
+          <h3 class="section-subtitle">Local Storage</h3>
+          <div class="highlight-box">
+            <p class="section-text">
+              <strong
+                >All your financial data is stored locally on your
+                device</strong
+              >
+              using SQLite database technology. This means:
+            </p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              Your data never leaves your device unless you explicitly choose to
+              share or export it
+            </li>
+            <li class="list-item">
+              We do not transmit your financial information to external servers
+            </li>
+            <li class="list-item">
+              Your data is stored securely on your device's local storage
+            </li>
+          </ul>
+
+          <h3 class="section-subtitle">Data Security</h3>
+          <p class="section-text">
+            We implement appropriate technical and organizational measures to
+            protect your data:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              Data is stored in an encrypted SQLite database on your device
+            </li>
+            <li class="list-item">
+              The App uses secure storage mechanisms provided by the operating
+              system
+            </li>
+            <li class="list-item">
+              We follow industry best practices for local data storage
+            </li>
+          </ul>
+
+          <h3 class="section-subtitle">Data Retention</h3>
+          <p class="section-text">
+            Your data is retained on your device until you:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              Delete the App (which removes all associated data)
+            </li>
+            <li class="list-item">
+              Manually delete specific accounts, transactions, or other data
+              within the App
+            </li>
+            <li class="list-item">Use the App's data reset functionality</li>
+          </ul>
+        </div>
+
+        <!-- Data Sharing and Disclosure -->
+        <div class="section">
+          <h2 class="section-title">Data Sharing and Disclosure</h2>
+
+          <h3 class="section-subtitle">No Third-Party Sharing</h3>
+          <div class="highlight-box">
+            <p class="section-text">
+              <strong
+                >We do not share, sell, or disclose your personal or financial
+                information to third parties.</strong
+              >
+              Your data remains on your device and is not transmitted to
+              external servers.
+            </p>
+          </div>
+
+          <h3 class="section-subtitle">User-Initiated Sharing</h3>
+          <p class="section-text">You may choose to:</p>
+          <ul class="list">
+            <li class="list-item">
+              Export your financial data as a backup file, which uses your
+              device's native sharing capabilities to save or share the backup
+              file
+            </li>
+            <li class="list-item">
+              Import data from a previously exported backup file using document
+              picker features
+            </li>
+          </ul>
+          <p class="section-text" style="margin-top: 20px">
+            These actions are entirely under your control and are not initiated
+            by us. The App only accesses files when you explicitly choose to
+            import or export data.
+          </p>
+        </div>
+
+        <!-- Permissions and Device Access -->
+        <div class="section">
+          <h2 class="section-title">Permissions and Device Access</h2>
+          <p class="section-text">
+            The App requests the following permissions:
+          </p>
+
+          <h3 class="section-subtitle">Notifications</h3>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Purpose:</strong> To send you reminders for scheduled
+              transactions
+            </li>
+            <li class="list-item">
+              <strong>Data Collected:</strong> Notification preferences and
+              scheduled notification dates
+            </li>
+            <li class="list-item">
+              <strong>Storage:</strong> Notification data is stored locally on
+              your device
+            </li>
+          </ul>
+
+          <h3 class="section-subtitle">Background Processing</h3>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Purpose:</strong> To process scheduled transactions and
+              send notifications even when the App is not actively open
+            </li>
+            <li class="list-item">
+              <strong>Data Collected:</strong> None beyond what is necessary for
+              scheduled transaction processing
+            </li>
+          </ul>
+
+          <h3 class="section-subtitle">File Access (Optional)</h3>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Purpose:</strong> To allow you to import or export your
+              financial data backup files
+            </li>
+            <li class="list-item">
+              <strong>Data Collected:</strong> Only data you explicitly choose
+              to import or export. When exporting, the App creates a backup file
+              that you can save to your device or share using your device's
+              native sharing capabilities.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Children's Privacy -->
+        <div class="section">
+          <h2 class="section-title">Children's Privacy</h2>
+          <p class="section-text">
+            The App is not intended for children under the age of 13. Since we
+            do not collect personal identifying information, there is no risk of
+            collecting such information from children. However, parents or
+            guardians should be aware that the App allows users to enter
+            financial data, and they should supervise their children's use of
+            the App accordingly.
+          </p>
+        </div>
+
+        <!-- Your Rights and Choices -->
+        <div class="section">
+          <h2 class="section-title">Your Rights and Choices</h2>
+          <p class="section-text">
+            You have the following rights regarding your data:
+          </p>
+          <ol class="numbered-list">
+            <li class="numbered-item">
+              <strong>Access:</strong> You can view all your data directly
+              within the App
+            </li>
+            <li class="numbered-item">
+              <strong>Modification:</strong> You can update, edit, or delete
+              your accounts, transactions, and other data at any time
+            </li>
+            <li class="numbered-item">
+              <strong>Deletion:</strong> You can delete individual items or
+              reset all App data through the App's settings
+            </li>
+            <li class="numbered-item">
+              <strong>Export:</strong> You can export your data using the App's
+              export features (if available)
+            </li>
+            <li class="numbered-item">
+              <strong>Notification Preferences:</strong> You can manage
+              notification permissions through your device settings
+            </li>
+          </ol>
+          <p class="section-text" style="margin-top: 20px">
+            <strong>Note:</strong> Since we do not collect personal identifying
+            information, there is no personal information to access, modify, or
+            delete beyond the financial data you enter into the App.
+          </p>
+        </div>
+
+        <!-- Data Deletion -->
+        <div class="section">
+          <h2 class="section-title">Data Deletion</h2>
+          <p class="section-text">
+            You can delete your data in the following ways:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <strong>Individual Items:</strong> Delete specific accounts,
+              transactions, categories, or schedules within the App
+            </li>
+            <li class="list-item">
+              <strong>Complete Reset:</strong> Use the App's data reset
+              functionality to delete all data
+            </li>
+            <li class="list-item">
+              <strong>App Uninstallation:</strong> Uninstalling the App will
+              remove all associated data from your device
+            </li>
+          </ul>
+        </div>
+
+        <!-- Changes to This Privacy Policy -->
+        <div class="section">
+          <h2 class="section-title">Changes to This Privacy Policy</h2>
+          <p class="section-text">
+            We may update this Privacy Policy from time to time. We will notify
+            you of any changes by:
+          </p>
+          <ul class="list">
+            <li class="list-item">Posting the new Privacy Policy in the App</li>
+            <li class="list-item">
+              Updating the "Last Updated" date at the top of this Privacy Policy
+            </li>
+          </ul>
+          <p class="section-text" style="margin-top: 20px">
+            You are advised to review this Privacy Policy periodically for any
+            changes. Changes to this Privacy Policy are effective when they are
+            posted.
+          </p>
+        </div>
+
+        <!-- Third-Party Services -->
+        <div class="section">
+          <h2 class="section-title">Third-Party Services</h2>
+          <p class="section-text">
+            The App is built using Expo and React Native frameworks. These
+            frameworks may collect certain technical information (such as device
+            type, operating system version) for app functionality purposes, but
+            they do not have access to your financial data.
+          </p>
+
+          <h3 class="section-subtitle">Expo Services</h3>
+          <ul class="list">
+            <li class="list-item">
+              <strong>EAS (Expo Application Services):</strong> Used for
+              building and distributing the App. EAS may collect build-related
+              metadata but does not access your financial data stored in the
+              App.
+            </li>
+          </ul>
+        </div>
+
+        <!-- International Data Transfers -->
+        <div class="section">
+          <h2 class="section-title">International Data Transfers</h2>
+          <p class="section-text">
+            Since all data is stored locally on your device, there are no
+            international data transfers. Your data remains on your device
+            regardless of your location.
+          </p>
+        </div>
+
+        <!-- California Privacy Rights -->
+        <div class="section">
+          <h2 class="section-title">California Privacy Rights</h2>
+          <p class="section-text">
+            If you are a California resident, you have the right to:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              Know what personal information is collected
+            </li>
+            <li class="list-item">
+              Know whether your personal information is sold or disclosed and to
+              whom
+            </li>
+            <li class="list-item">
+              Say no to the sale of personal information
+            </li>
+            <li class="list-item">Access your personal information</li>
+            <li class="list-item">
+              Request deletion of your personal information
+            </li>
+            <li class="list-item">
+              Not be discriminated against for exercising your privacy rights
+            </li>
+          </ul>
+          <p class="section-text" style="margin-top: 20px">
+            Since we do not sell or share your data with third parties, and all
+            data is stored locally on your device, you have full control over
+            your information.
+          </p>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="contact-section">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-text">
+            If you have any questions or concerns about this Privacy Policy or
+            our data practices, please contact us at:
+          </p>
+          <div class="contact-info">
+            <p class="contact-item">
+              <strong>Email:</strong> cmsabelita@gmail.com
+            </p>
+            <p class="contact-item"><strong>Owner:</strong> cmsabelita</p>
+          </div>
+        </div>
+
+        <!-- Consent -->
+        <div class="section">
+          <h2 class="section-title">Consent</h2>
+          <p class="section-text">
+            By using the App, you consent to this Privacy Policy and agree to
+            its terms. If you do not agree with this Privacy Policy, please do
+            not use the App.
+          </p>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="footer-note">
+          <p class="footer-note-text">
+            <strong>Note:</strong> This Privacy Policy applies only to the
+            EveryPeso mobile application. It does not apply to any third-party
+            websites, services, or applications that may be linked from within
+            the App.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
